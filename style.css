@@ -6,7 +6,7 @@
 
 body {
     background-color: hsl(0, 0%, 95%);
-    height: 720px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +104,7 @@ button {
     cursor: pointer;
 }
 
-@media (max-width: 375px) {
+@media (max-width:700px){
     body {
         height: 1645px;
     }
