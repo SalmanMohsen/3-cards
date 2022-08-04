@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.one {
+    background-color: hsl(31, 77%, 52%);
+    z-index: 88;
+    width: 33%;
+    height: 500px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.two {
+    background-color: hsl(184, 100%, 22%);
+    z-index: 88;
+    width: 33%;
+    height: 500px;
+}
+
+.three {
+    background-color: hsl(179, 100%, 13%);
+    z-index: 88;
+    width: 33%;
+    height: 500px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+svg {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+p {
+    width: 265px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+button {
+    margin-left: 50px;
+    margin-top: 77px;
+    border-radius: 25px;
+    border-style: hidden;
+    width: 155px;
+    height: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    transition: ease 0.2s;
+}
+
+.one button {
+    color: hsl(31, 77%, 52%);
+}
+
+.two button {
+    color: hsl(184, 100%, 22%);
+}
+
+.three button {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border-style: solid;
+    border-color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media (max-width:930px) {
+    body {
+        height: 1645px;
+    }
+    .parent {
+        display: flex;
+        flex-direction: column;
+    }
+    .one,
+    .two,
+    .three {
+        width: 100%;
+    }
+    .one {
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0px;
+    }
+    .three {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 7px;
+    }
+}
